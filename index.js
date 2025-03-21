@@ -24,6 +24,25 @@ const countrySchema = new mongoose.Schema({
 
 const Country = mongoose.model("Country", countrySchema, "Countries");
 
+// Create a POST route for "/add/country" that adds a country using the request body
+// Use postman to add at least THREE different countries
+
+
+// Create a GET route for "/" that renders countries.ejs with every country from mongoDB
+
+
+// Go to countries.ejs and follow the tasks there
+
+
+// Create a PATCH route handler for "/update/country" that modifies the population of any country you want
+// Test this route on post man
+
+
+
+// Create a DELETE route handler for "/delete/country" that deletes a country of your choice
+// Test this route on post man
+
+
 async function startServer() {
   
     // add your SRV string with a database called countries
