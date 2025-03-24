@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.use(express.json());
 
 const countrySchema = new mongoose.Schema({
-  name: { type: String },
+  country: { type: String },
   flagURL: { type: String },
   population: { type: Number },
   officialLanguage: { type: String },
@@ -24,22 +24,22 @@ const countrySchema = new mongoose.Schema({
 
 const Country = mongoose.model("Country", countrySchema, "Countries");
 
-// Create a POST route for "/add/country" that adds a country using the request body
+// Create a POST route for "/add/country" that adds a country using the request body (3 points)
 // Use postman to add at least THREE different countries
 
 
-// Create a GET route for "/" that renders countries.ejs with every country from mongoDB
+// Create a GET route for "/" that renders countries.ejs with every country from the Countries collection (1 point)
 
 
-// Go to countries.ejs and follow the tasks there
+// Go to countries.ejs and follow the tasks there (2 points)
 
 
-// Create a PATCH route handler for "/update/country" that modifies the population of any country you want
+// Create a dynamic PATCH route handler for "/update/{name}" that modifies the population of the country specified in the path (3 points)
 // Test this route on post man
 
 
 
-// Create a DELETE route handler for "/delete/country" that deletes a country of your choice
+// Create a DELETE route handler for "/delete/country" that deletes a country of your choice (3 points)
 // Test this route on post man
 
 
